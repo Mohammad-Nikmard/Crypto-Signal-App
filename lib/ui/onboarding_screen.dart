@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_vip_signal/ui/blog_screen.dart';
 
 class OnboardingScreen extends StatelessWidget {
@@ -17,20 +18,18 @@ class OnboardingScreen extends StatelessWidget {
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const SizedBox(
-                height: 70,
-              ),
               const Image(
                 image: AssetImage("images/onboarding_logo.png"),
               ),
-              const Text(
+              Text(
                 "اپلیکیشن سیگنال VIP",
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontFamily: "SB",
                   color: Colors.black,
-                  fontSize: 35,
+                  fontSize: ScreenUtil().setSp(32),
                   fontWeight: FontWeight.bold,
                 ),
                 textDirection: TextDirection.rtl,
@@ -46,8 +45,8 @@ class OnboardingScreen extends StatelessWidget {
                       navigator(context, BlogScreen());
                     },
                     child: Container(
-                      height: 50,
-                      width: 145,
+                      height: ScreenUtil().setHeight(40),
+                      width: ScreenUtil().setWidth(145),
                       decoration: const BoxDecoration(
                         boxShadow: [
                           BoxShadow(
@@ -59,16 +58,16 @@ class OnboardingScreen extends StatelessWidget {
                         ],
                         color: Color.fromARGB(255, 68, 57, 233),
                         borderRadius: BorderRadius.all(
-                          Radius.circular(10),
+                          Radius.circular(15),
                         ),
                       ),
-                      child: const Center(
+                      child: Center(
                         child: Text(
                           "ورود",
                           style: TextStyle(
                             fontFamily: "Vazir",
                             color: Colors.white,
-                            fontSize: 23,
+                            fontSize: ScreenUtil().setSp(20),
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -80,8 +79,8 @@ class OnboardingScreen extends StatelessWidget {
                   ),
                   InkWell(
                     child: Container(
-                      height: 50,
-                      width: 145,
+                      height: ScreenUtil().setHeight(40),
+                      width: ScreenUtil().setWidth(145),
                       decoration: const BoxDecoration(
                         boxShadow: [
                           BoxShadow(
@@ -93,16 +92,16 @@ class OnboardingScreen extends StatelessWidget {
                         ],
                         color: Color.fromARGB(255, 236, 74, 74),
                         borderRadius: BorderRadius.all(
-                          Radius.circular(10),
+                          Radius.circular(15),
                         ),
                       ),
-                      child: const Center(
+                      child: Center(
                         child: Text(
                           "ثبت نام",
                           style: TextStyle(
                             fontFamily: "Vazir",
                             color: Colors.white,
-                            fontSize: 21,
+                            fontSize: ScreenUtil().setSp(20),
                             fontWeight: FontWeight.bold,
                           ),
                         ),

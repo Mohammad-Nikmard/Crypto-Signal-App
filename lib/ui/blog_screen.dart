@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_vip_signal/custom_widget/custom_blog_page.dart';
 
 class BlogScreen extends StatelessWidget {
@@ -78,8 +79,8 @@ class BlogScreen extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.only(bottom: 30),
                   child: Container(
-                    height: 45,
-                    width: 145,
+                    height: ScreenUtil().setHeight(45),
+                    width: ScreenUtil().setWidth(145),
                     decoration: const BoxDecoration(
                       boxShadow: [
                         BoxShadow(
@@ -94,13 +95,13 @@ class BlogScreen extends StatelessWidget {
                         Radius.circular(10),
                       ),
                     ),
-                    child: const Center(
+                    child: Center(
                       child: Text(
                         "خروج از حساب",
                         style: TextStyle(
                           fontFamily: "Vazir",
                           color: Colors.white,
-                          fontSize: 18,
+                          fontSize: ScreenUtil().setSp(18),
                           fontWeight: FontWeight.bold,
                         ),
                       ),
