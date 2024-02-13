@@ -1,8 +1,8 @@
-![mockup](assets/mockup.png)
-
-
 
 # Crypto VIP Signal App
+
+![mockup](assets/mockup.png)
+
 
 ## Overview 
 
@@ -12,6 +12,11 @@ This is a simple sampled signal App to showcase buy/sell signal in Cryptocurrenc
 
  - Main Functionality : gives users a list of crypto signal with name , picture , sell price , buy price
 
+
+## packages Used
+ - flutter_screenutil
+
+   
 ## Technologies User 
  
  - Language: Dart 
